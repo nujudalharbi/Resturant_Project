@@ -36,19 +36,49 @@ class ProductsViewController: UIViewController {
     @IBAction func AddOfProduct(_ sender: Any) {
         
         
-        
-        
-        let dbRef = Firestore.firestore()
-        
+//
+//
+//        let dbRef = Firestore.firestore()
+//
+//
+//        let productArray = ["title" : NameOfProduct.text! ,
+//                            "price" : PriceOfProduct.text! , "descrabition" : DatialsOfProduct.text! , "image" : ""
+//
+//        ] as [String : Any]
+//
+//        dbRef.collection("products").addDocument(data: productArray)
+//    }
+    
+    
+        uploadImage(image: imageOfProduct.image! ){ [self]
+          
+            URLimage in
+            if URLimage.isEmpty == false {
+                let IDStudent = " \(Int.random(in: 1000...9999))\(Int.random(in: 1000...9999)) "
+                
+                let infoStudent = ["Name of Product" : NameOfProduct.text! , "Deatails of Product" : DatialsOfProduct.text! , "Price of Product" : PriceOfProduct.text! , "image of Product " : URLimage ] as [String : AnyObject]
+                
+         sentDataFirestore(ID: IDStudent , DataUsers: infoStudent)
+                
+                
+                
+               
+                
+                print(URLimage)
+            }
+            
+            
+            
+        }
+    
+    
+    
+    
 
-        let productArray = ["title" : NameOfProduct.text! ,
-                            "price" : PriceOfProduct.text! , "descrabition" : DatialsOfProduct.text! , "image" : ""
-                         
-        ] as [String : Any]
-        
-        dbRef.collection("products").addDocument(data: productArray)
     }
-
+    
+    
+    
 }
 
 

@@ -17,6 +17,8 @@
 		916F5E0B2870F0E800298ED9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916F5E0A2870F0E800298ED9 /* SignupViewController.swift */; };
 		916F5E0D2870F16D00298ED9 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916F5E0C2870F16D00298ED9 /* ProductsViewController.swift */; };
 		916F5E0F2870F54700298ED9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916F5E0E2870F54700298ED9 /* MenuViewController.swift */; };
+		91899D56287DFB8400B7924A /* storgeFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91899D55287DFB8300B7924A /* storgeFirebase.swift */; };
+		91899D58287DFF5300B7924A /* fireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91899D57287DFF5300B7924A /* fireStore.swift */; };
 		919EA0732870C45800336898 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919EA0722870C45800336898 /* GoogleService-Info.plist */; };
 		919EA0762870C5EF00336898 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 919EA0752870C5EF00336898 /* FirebaseAuth */; };
 		919EA0782870C5EF00336898 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 919EA0772870C5EF00336898 /* FirebaseAuthCombine-Community */; };
@@ -41,6 +43,8 @@
 		916F5E0A2870F0E800298ED9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		916F5E0C2870F16D00298ED9 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		916F5E0E2870F54700298ED9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		91899D55287DFB8300B7924A /* storgeFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storgeFirebase.swift; sourceTree = "<group>"; };
+		91899D57287DFF5300B7924A /* fireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireStore.swift; sourceTree = "<group>"; };
 		919EA0722870C45800336898 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,8 @@
 				916C39B32869F5600098CF71 /* Main.storyboard */,
 				916F5E0E2870F54700298ED9 /* MenuViewController.swift */,
 				916F5E0C2870F16D00298ED9 /* ProductsViewController.swift */,
+				91899D57287DFF5300B7924A /* fireStore.swift */,
+				91899D55287DFB8300B7924A /* storgeFirebase.swift */,
 				916F5E0A2870F0E800298ED9 /* SignupViewController.swift */,
 				916C39B92869F5620098CF71 /* Assets.xcassets */,
 				916C39BB2869F5620098CF71 /* LaunchScreen.storyboard */,
@@ -187,9 +193,11 @@
 				916C39B22869F5600098CF71 /* ViewController.swift in Sources */,
 				916C39AE2869F5600098CF71 /* AppDelegate.swift in Sources */,
 				916F5E0F2870F54700298ED9 /* MenuViewController.swift in Sources */,
+				91899D56287DFB8400B7924A /* storgeFirebase.swift in Sources */,
 				916F5E0B2870F0E800298ED9 /* SignupViewController.swift in Sources */,
 				916C39B82869F5600098CF71 /* Resturant.xcdatamodeld in Sources */,
 				916C39B02869F5600098CF71 /* SceneDelegate.swift in Sources */,
+				91899D58287DFF5300B7924A /* fireStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
