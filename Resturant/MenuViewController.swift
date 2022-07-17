@@ -95,6 +95,20 @@ extension MenuViewController : UITableViewDelegate , UITableViewDataSource{
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let VC = storyboard?.instantiateViewController(withIdentifier: "DetileID") as! DetailsMenuViewController
+        
+       
+        let selectedCell = tableView.cellForRow(at: indexPath) as! menuTableViewCell
+        
+        VC.titleRest = productList[indexPath.row].getTitle()
+        VC.price = productList[indexPath.row].getPrice()
+        VC.imageDetails = selectedCell.menuImg.image
+
+        
+        VC.descriptionRest = productList[indexPath.row ].getDescrabtion()
+        self.navigationController?.show(VC, sender: true)
+    }
     
     
     
