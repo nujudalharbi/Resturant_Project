@@ -80,8 +80,8 @@ class DetailsMenuViewController: UIViewController {
     //  let payment = UserDefaults.standard.string(forKey: "payment")
         let orderArray = ["title" : detailTitle.text! ,
                           "noteOrder" : note.text! , "qunatity" : counterLabel.text! , "status" : "open",
-                          "tableNum" : "" ,  "payment" : ""
-                         ]
+                          "tableNum" : "" ,  "payment" : "" , "image" : imageDetails?.images
+        ] as [String : Any]
         
         dbRef.collection("Orders").addDocument(data: orderArray)
         

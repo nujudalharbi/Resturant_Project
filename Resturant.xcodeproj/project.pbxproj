@@ -10,6 +10,7 @@
 		911C0FC0288A08A400B009C4 /* cartsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C0FBE288A08A400B009C4 /* cartsTableViewCell.swift */; };
 		911C0FC1288A08A400B009C4 /* cartsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911C0FBF288A08A400B009C4 /* cartsTableViewCell.xib */; };
 		911C0FC3288A08B900B009C4 /* cartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C0FC2288A08B900B009C4 /* cartsViewController.swift */; };
+		9130066E288D0D8E00F4EC06 /* previousOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130066D288D0D8E00F4EC06 /* previousOrderViewController.swift */; };
 		91508FDA288288D50008A473 /* DetailsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91508FD9288288D50008A473 /* DetailsMenuViewController.swift */; };
 		916C39AE2869F5600098CF71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C39AD2869F5600098CF71 /* AppDelegate.swift */; };
 		916C39B02869F5600098CF71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C39AF2869F5600098CF71 /* SceneDelegate.swift */; };
@@ -21,6 +22,8 @@
 		916F5E0B2870F0E800298ED9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916F5E0A2870F0E800298ED9 /* SignupViewController.swift */; };
 		916F5E0D2870F16D00298ED9 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916F5E0C2870F16D00298ED9 /* ProductsViewController.swift */; };
 		916F5E0F2870F54700298ED9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916F5E0E2870F54700298ED9 /* MenuViewController.swift */; };
+		9185435F2890D755009850C8 /* previousOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185435D2890D755009850C8 /* previousOrderTableViewCell.swift */; };
+		918543602890D755009850C8 /* previousOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9185435E2890D755009850C8 /* previousOrderTableViewCell.xib */; };
 		91899D56287DFB8400B7924A /* storgeFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91899D55287DFB8300B7924A /* storgeFirebase.swift */; };
 		91899D58287DFF5300B7924A /* fireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91899D57287DFF5300B7924A /* fireStore.swift */; };
 		919EA0732870C45800336898 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919EA0722870C45800336898 /* GoogleService-Info.plist */; };
@@ -41,6 +44,7 @@
 		911C0FBE288A08A400B009C4 /* cartsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartsTableViewCell.swift; sourceTree = "<group>"; };
 		911C0FBF288A08A400B009C4 /* cartsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cartsTableViewCell.xib; sourceTree = "<group>"; };
 		911C0FC2288A08B900B009C4 /* cartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartsViewController.swift; sourceTree = "<group>"; };
+		9130066D288D0D8E00F4EC06 /* previousOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previousOrderViewController.swift; sourceTree = "<group>"; };
 		91508FD9288288D50008A473 /* DetailsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMenuViewController.swift; sourceTree = "<group>"; };
 		916C39AA2869F5600098CF71 /* Resturant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resturant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		916C39AD2869F5600098CF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		916F5E0A2870F0E800298ED9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		916F5E0C2870F16D00298ED9 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		916F5E0E2870F54700298ED9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9185435D2890D755009850C8 /* previousOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previousOrderTableViewCell.swift; sourceTree = "<group>"; };
+		9185435E2890D755009850C8 /* previousOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = previousOrderTableViewCell.xib; sourceTree = "<group>"; };
 		91899D55287DFB8300B7924A /* storgeFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storgeFirebase.swift; sourceTree = "<group>"; };
 		91899D57287DFF5300B7924A /* fireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireStore.swift; sourceTree = "<group>"; };
 		919EA0722870C45800336898 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -104,11 +110,14 @@
 				916C39AF2869F5600098CF71 /* SceneDelegate.swift */,
 				916C39B12869F5600098CF71 /* ViewController.swift */,
 				916C39B32869F5600098CF71 /* Main.storyboard */,
+				9185435D2890D755009850C8 /* previousOrderTableViewCell.swift */,
+				9185435E2890D755009850C8 /* previousOrderTableViewCell.xib */,
 				911C0FBE288A08A400B009C4 /* cartsTableViewCell.swift */,
 				911C0FBF288A08A400B009C4 /* cartsTableViewCell.xib */,
 				911C0FC2288A08B900B009C4 /* cartsViewController.swift */,
 				91508FD9288288D50008A473 /* DetailsMenuViewController.swift */,
 				91B343122880BC8700688572 /* Products.swift */,
+				9130066D288D0D8E00F4EC06 /* previousOrderViewController.swift */,
 				91B3430E2880B30300688572 /* menuTableViewCell.swift */,
 				91B3430F2880B30300688572 /* menuTableViewCell.xib */,
 				916F5E0E2870F54700298ED9 /* MenuViewController.swift */,
@@ -202,6 +211,7 @@
 				911C0FC1288A08A400B009C4 /* cartsTableViewCell.xib in Resources */,
 				916C39BA2869F5620098CF71 /* Assets.xcassets in Resources */,
 				916C39B52869F5600098CF71 /* Main.storyboard in Resources */,
+				918543602890D755009850C8 /* previousOrderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +224,7 @@
 			files = (
 				916F5E0D2870F16D00298ED9 /* ProductsViewController.swift in Sources */,
 				91B343132880BC8700688572 /* Products.swift in Sources */,
+				9130066E288D0D8E00F4EC06 /* previousOrderViewController.swift in Sources */,
 				916C39B22869F5600098CF71 /* ViewController.swift in Sources */,
 				91B343102880B30300688572 /* menuTableViewCell.swift in Sources */,
 				911C0FC3288A08B900B009C4 /* cartsViewController.swift in Sources */,
@@ -225,6 +236,7 @@
 				916C39B82869F5600098CF71 /* Resturant.xcdatamodeld in Sources */,
 				916C39B02869F5600098CF71 /* SceneDelegate.swift in Sources */,
 				91899D58287DFF5300B7924A /* fireStore.swift in Sources */,
+				9185435F2890D755009850C8 /* previousOrderTableViewCell.swift in Sources */,
 				911C0FC0288A08A400B009C4 /* cartsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

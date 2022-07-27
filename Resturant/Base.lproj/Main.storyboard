@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671.0144927536232" y="989.73214285714278"/>
+            <point key="canvasLocation" x="761" y="1685"/>
         </scene>
         <!--Carts View Controller-->
         <scene sceneID="1q3-gE-0hH">
@@ -82,11 +82,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UsM-Pm-mhN">
-                                <rect key="frame" x="20" y="176" width="374" height="601"/>
+                                <rect key="frame" x="20" y="176" width="374" height="529"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="aZi-l1-Ofc"/>
-                                    <constraint firstAttribute="height" constant="601" id="ouV-A5-v1W"/>
+                                    <constraint firstAttribute="height" constant="529" id="ouV-A5-v1W"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="206" id="9RB-Mc-WvO">
@@ -99,11 +99,25 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-78-BEI">
+                                <rect key="frame" x="47" y="744" width="321" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="321" id="Yde-TO-vG5"/>
+                                    <constraint firstAttribute="height" constant="40" id="w6L-qr-L3X"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Check"/>
+                                <connections>
+                                    <action selector="checkOrder:" destination="4qE-Xj-pS8" eventType="touchUpInside" id="FqV-JJ-Kat"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vFO-lQ-QBH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UsM-Pm-mhN" firstAttribute="centerY" secondItem="vFO-lQ-QBH" secondAttribute="centerY" id="7s7-jA-bVI"/>
+                            <constraint firstItem="rHv-78-BEI" firstAttribute="leading" secondItem="UsM-Pm-mhN" secondAttribute="trailing" constant="-347" id="5AM-4E-reo"/>
+                            <constraint firstItem="rHv-78-BEI" firstAttribute="top" secondItem="UsM-Pm-mhN" secondAttribute="bottom" constant="39" id="7Oj-ox-p8X"/>
+                            <constraint firstItem="UsM-Pm-mhN" firstAttribute="centerY" secondItem="vFO-lQ-QBH" secondAttribute="centerY" constant="-36" id="7s7-jA-bVI"/>
                             <constraint firstItem="UsM-Pm-mhN" firstAttribute="centerX" secondItem="vFO-lQ-QBH" secondAttribute="centerX" id="XEk-C0-fFs"/>
                         </constraints>
                     </view>
@@ -114,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rQ-gw-cED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2673.913043478261" y="-473.4375"/>
+            <point key="canvasLocation" x="2913.04347826087" y="-1414.2857142857142"/>
         </scene>
         <!--Menu-->
         <scene sceneID="z2k-eT-4Xf">
@@ -164,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bhp-EZ-4G4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2675" y="202"/>
+            <point key="canvasLocation" x="2861" y="-727"/>
         </scene>
         <!--Details Menu View Controller-->
         <scene sceneID="UW7-2n-Li9">
@@ -303,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ko-03-bYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3565" y="228"/>
+            <point key="canvasLocation" x="3733" y="-727"/>
         </scene>
         <!--Products View Controller-->
         <scene sceneID="TbA-rA-vth">
@@ -416,7 +430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGC-o0-zNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3991" y="1300"/>
+            <point key="canvasLocation" x="3035" y="1730"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="2o4-fK-mJe">
@@ -493,7 +507,7 @@
                     <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
                 </button>
             </objects>
-            <point key="canvasLocation" x="1669.5652173913045" y="1676.7857142857142"/>
+            <point key="canvasLocation" x="1475" y="1685"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ihj-uN-Rgc">
@@ -510,11 +524,55 @@
                     <connections>
                         <segue destination="Gat-i4-dJd" kind="relationship" relationship="viewControllers" id="e2C-WW-JVE"/>
                         <segue destination="fC9-J4-UUi" kind="relationship" relationship="viewControllers" id="bCb-XL-kTN"/>
+                        <segue destination="6Ge-DU-Vgd" kind="relationship" relationship="viewControllers" id="I1D-Oy-2Tm"/>
+                        <segue destination="7XI-T7-JYb" kind="relationship" relationship="viewControllers" id="q1U-36-tLT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d43-7H-rs1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="761" y="228"/>
+        </scene>
+        <!--Previous Order View Controller-->
+        <scene sceneID="vzJ-OX-U4r">
+            <objects>
+                <viewController storyboardIdentifier="preID" id="6Ge-DU-Vgd" customClass="previousOrderViewController" customModule="Resturant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e4V-7F-ZF8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3IG-qE-gSH">
+                                <rect key="frame" x="0.0" y="104" width="414" height="649"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="6" indentationWidth="14" rowHeight="278" id="4NY-eK-u5e" customClass="previousOrderTableViewCell" customModule="Resturant" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="278"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4NY-eK-u5e" id="gid-Ue-vhz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="278"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1a9-LP-KV3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3IG-qE-gSH" firstAttribute="top" secondItem="1a9-LP-KV3" secondAttribute="top" constant="60" id="BK3-r4-o3O"/>
+                            <constraint firstItem="3IG-qE-gSH" firstAttribute="leading" secondItem="1a9-LP-KV3" secondAttribute="leading" id="Eah-XJ-QgY"/>
+                            <constraint firstItem="3IG-qE-gSH" firstAttribute="trailing" secondItem="1a9-LP-KV3" secondAttribute="trailing" id="RKR-to-Cqf"/>
+                            <constraint firstItem="1a9-LP-KV3" firstAttribute="bottom" secondItem="3IG-qE-gSH" secondAttribute="bottom" constant="60" id="z6R-Im-OMO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="checkmark.diamond" catalog="system" id="O2U-ig-jeu"/>
+                    <navigationItem key="navigationItem" id="FFC-cf-BBP"/>
+                    <connections>
+                        <outlet property="tableView" destination="3IG-qE-gSH" id="b6Y-Rh-FWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ClH-Qs-BFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971.0144927536232" y="126.5625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gbj-3M-Ep6">
@@ -538,6 +596,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtF-Uu-5f2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="760.86956521739137" y="989.73214285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wot-ad-jWA">
+            <objects>
+                <viewController id="7XI-T7-JYb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Msl-ZK-eef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rra-OT-aIV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="person.text.rectangle" catalog="system" id="4Fh-JQ-say"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Cj-IK-odk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971" y="854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lx1-cP-25o">
@@ -563,14 +637,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TpH-Hp-kE2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782.608695652174" y="227.67857142857142"/>
+            <point key="canvasLocation" x="1925" y="-727"/>
         </scene>
     </scenes>
     <resources>
         <image name="cart.circle" catalog="system" width="128" height="121"/>
+        <image name="checkmark.diamond" catalog="system" width="128" height="122"/>
         <image name="menucard" catalog="system" width="107" height="128"/>
         <image name="minus" catalog="system" width="128" height="24"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.text.rectangle" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">

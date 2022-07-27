@@ -45,12 +45,74 @@ class cartsViewController: UIViewController {
         
         
         // Do any additional setup after loading the view.
+        
+        
+        
+       
+        
+        
+        
+        
     }
-    
-
+    var tit = ""
+   
+    var titlless = ""
+var editss = ""
+    var selcet = Products()
+    var previousOrderArray :  [String : Any] = [:]
+    @IBAction func checkOrder(_ sender: Any) {
+      
+        
+        
+        
+        for order in orderArr {
+          
+            let docRef = dbStore.collection("Orders").document(order.getID())
+            docRef.updateData(["status" : "closed"  , "qunatity" : editss ])
+            
+            let orderDoc = dbStore.collection("Orders").document(order.id!)
+            orderDoc.delete()
+         
+            
+            
+           
+             previousOrderArray = ["title" : tit
+                             
+            ] as [String : Any]
+            
+            let dbRef = Firestore.firestore()
+            dbRef.collection("previousOrder").addDocument(data: previousOrderArray)
+            
+            print ("\(tit),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,")
+        }
  
-
-}
+        
+        
+        print ("added to DB")
+        
+//
+//            let dbStore = Firestore.firestore()
+//
+//        let orderRef = dbStore.collection("Orders").document(selcet.id! )
+//
+//
+//            orderRef.updateData([
+//                "qunatity": editss
+//        ])
+//        { err in
+//            if let err = err {
+//                print("Error updating document: \(err)")
+//            } else {
+//                print("Document successfully updated")
+//
+//        }
+//        }
+//
+        
+        
+             
+    
+    }}
 
 extension cartsViewController : UITableViewDelegate , UITableViewDataSource{
     
@@ -66,27 +128,32 @@ extension cartsViewController : UITableViewDelegate , UITableViewDataSource{
                 let cell = tableView.dequeueReusableCell(withIdentifier: "orderID")as! cartsTableViewCell
                 let pro : Products
                 pro = orderArr[indexPath.row ]
-                if let imageName = pro.image {
-                    if let url = URL(string: imageName) {
-                        URLSession.shared.dataTask(with: url) { (data, _, _) in
-                            if let data = data {
-                                DispatchQueue.main.async {
-//                                    cell.menuImg.image = UIImage(data: data)
-                                }
-                            }
-                        }.resume()
-                    }
-                }
+              
        cell.orderTitle.text = String(pro.qunatity) + " " + pro.title!
-                
-                
-//  ----------------      layout cell and image
-        
-//        cell.viewCell.layer.cornerRadius = cell.viewCell.frame.height / 2
-//
-//        cell.backgroundCellImg.layer.cornerRadius = cell.backgroundCellImg.frame.height / 2
+       cell.editQunatityOrder.text = String(pro.qunatity)
+//       cell.edit = editss
+
+       editss = cell.edit
+       tit = cell.orderTitle.text!
+
+//       cell.selectedOrder = selcet
+       selcet = cell.selectedOrder
+       
+
+       
         return cell
 
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let VC = storyboard?.instantiateViewController(withIdentifier: "preID") as! previousOrderViewController
+        let selectedCell = tableView.cellForRow(at: indexPath) as! cartsTableViewCell
+                
+        VC.titleOrd = tit
+        print()
+//        self.navigationController?.show(VC, sender: true)
     }
     
 }
