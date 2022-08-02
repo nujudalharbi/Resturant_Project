@@ -133,7 +133,7 @@
         <!--Menu-->
         <scene sceneID="z2k-eT-4Xf">
             <objects>
-                <viewController id="VqQ-10-Q8p" customClass="MenuViewController" customModule="Resturant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menuID" id="VqQ-10-Q8p" customClass="MenuViewController" customModule="Resturant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Evw-0Z-wp2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -541,26 +541,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3IG-qE-gSH">
-                                <rect key="frame" x="0.0" y="104" width="414" height="649"/>
+                                <rect key="frame" x="0.0" y="207" width="414" height="546"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="546" id="fZu-Yk-km1"/>
+                                </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="6" indentationWidth="14" rowHeight="278" id="4NY-eK-u5e" customClass="previousOrderTableViewCell" customModule="Resturant" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="278"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="6" indentationWidth="14" rowHeight="171" id="4NY-eK-u5e" customClass="previousOrderTableViewCell" customModule="Resturant" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="171"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4NY-eK-u5e" id="gid-Ue-vhz">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="278"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="171"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <rect key="contentStretch" x="0.0" y="1" width="0.80000000000000004" height="0.55000000000000004"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-9e-TTe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="116"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Previous Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXm-yf-WEg">
+                                        <rect key="frame" x="8" y="56" width="185" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.62688723130000001" green="0.53003134730000001" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1a9-LP-KV3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3IG-qE-gSH" firstAttribute="top" secondItem="1a9-LP-KV3" secondAttribute="top" constant="60" id="BK3-r4-o3O"/>
                             <constraint firstItem="3IG-qE-gSH" firstAttribute="leading" secondItem="1a9-LP-KV3" secondAttribute="leading" id="Eah-XJ-QgY"/>
+                            <constraint firstItem="TKn-9e-TTe" firstAttribute="leading" secondItem="1a9-LP-KV3" secondAttribute="leading" id="QMx-xw-leH"/>
                             <constraint firstItem="3IG-qE-gSH" firstAttribute="trailing" secondItem="1a9-LP-KV3" secondAttribute="trailing" id="RKR-to-Cqf"/>
+                            <constraint firstItem="3IG-qE-gSH" firstAttribute="top" secondItem="TKn-9e-TTe" secondAttribute="bottom" constant="47" id="Wkg-hL-54L"/>
+                            <constraint firstItem="TKn-9e-TTe" firstAttribute="trailing" secondItem="1a9-LP-KV3" secondAttribute="trailing" id="eAm-h4-n4A"/>
+                            <constraint firstItem="TKn-9e-TTe" firstAttribute="top" secondItem="1a9-LP-KV3" secondAttribute="top" id="fbs-bP-e34"/>
                             <constraint firstItem="1a9-LP-KV3" firstAttribute="bottom" secondItem="3IG-qE-gSH" secondAttribute="bottom" constant="60" id="z6R-Im-OMO"/>
                         </constraints>
                     </view>
@@ -611,7 +631,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cj-IK-odk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="854"/>
+            <point key="canvasLocation" x="2132" y="960"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lx1-cP-25o">

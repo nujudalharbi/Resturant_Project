@@ -15,7 +15,7 @@ class cartsTableViewCell: UITableViewCell {
     var counter = 0
     var selectedOrder = Products()
     
-var edit = ""
+    var edit = ""
     let dbStore = Firestore.firestore()
     
     
@@ -71,11 +71,11 @@ var edit = ""
         editQunatityOrder.text = String (counter)
         edit = editQunatityOrder.text!
 
-
-      
-     
-        
-        
+//        let docRef = dbStore.collection("Orders").document(selectedOrder.getID())
+//        docRef.updateData([ "qunatity" : edit ])
+//     
+//        
+//        
         
     }
     

@@ -80,13 +80,15 @@ class DetailsMenuViewController: UIViewController {
     //  let payment = UserDefaults.standard.string(forKey: "payment")
         let orderArray = ["title" : detailTitle.text! ,
                           "noteOrder" : note.text! , "qunatity" : counterLabel.text! , "status" : "open",
-                          "tableNum" : "" ,  "payment" : "" , "image" : imageDetails?.images
+                          "tableNum" : "" ,  "payment" : "" , "image" : imageDetails?.images , "id" :
+                            Auth.auth().currentUser?.uid as Any
         ] as [String : Any]
         
         dbRef.collection("Orders").addDocument(data: orderArray)
         
         print ("added to DB")
-        
+        let VC = self.storyboard?.instantiateViewController(withIdentifier: "menuID") as! MenuViewController
+        self.navigationController?.popViewController(animated: true)
         
         
         

@@ -64,7 +64,7 @@ extension previousOrderViewController : UITableViewDelegate , UITableViewDataSou
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
     
-                let cell = tableView.dequeueReusableCell(withIdentifier: "preID")as! previousOrderTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "previousID")as! previousOrderTableViewCell
       
        
        
@@ -80,6 +80,9 @@ extension previousOrderViewController : UITableViewDelegate , UITableViewDataSou
        
         return cell
 
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
     
 }

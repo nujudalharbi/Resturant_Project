@@ -70,6 +70,10 @@ var editss = ""
             let docRef = dbStore.collection("Orders").document(order.getID())
             docRef.updateData(["status" : "closed"  , "qunatity" : editss ])
             
+
+            
+            
+            
             let orderDoc = dbStore.collection("Orders").document(order.id!)
             orderDoc.delete()
          
@@ -139,7 +143,9 @@ extension cartsViewController : UITableViewDelegate , UITableViewDataSource{
 //       cell.selectedOrder = selcet
        selcet = cell.selectedOrder
        
-
+       
+       
+       
        
         return cell
 
@@ -155,5 +161,7 @@ extension cartsViewController : UITableViewDelegate , UITableViewDataSource{
         print()
 //        self.navigationController?.show(VC, sender: true)
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
 }
