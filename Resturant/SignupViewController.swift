@@ -62,10 +62,12 @@ class SignupViewController: UIViewController {
 //----------------  write information user in firestore
                 
                 let db = Firestore.firestore()
+                
+                let comment = UserDefaults.standard.string(forKey: "comment customer")
                 let doc = db.collection("user").document(Auth.auth().currentUser!.uid)
         
                 
-                doc.setData(["firstName " : userName1  ,  "lastName": userName2 , "email" : email.text! , "uid" : result?.user.uid as Any]  ) { (error) in
+                doc.setData(["firstName " : userName1  ,  "lastName": userName2 , "email" : email.text! ,"comment customer" :comment, "uid" : result?.user.uid as Any]  ) { (error) in
 //                    errorLabel.isHidden = true
         }
                 

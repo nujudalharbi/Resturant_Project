@@ -10,7 +10,7 @@ import Firebase
 class cartsViewController: UIViewController {
     
     var orderArr = [Products]()
-
+    var orderImgss : UIImage? 
     var item = 0
     let dbStore = Firestore.firestore()
     
@@ -143,7 +143,10 @@ extension cartsViewController : UITableViewDelegate , UITableViewDataSource{
 //       cell.selectedOrder = selcet
        selcet = cell.selectedOrder
        
-       
+       if let imageDetails = orderImgss {
+           cell.orderImg.image = imageDetails
+
+       }
        
        
        

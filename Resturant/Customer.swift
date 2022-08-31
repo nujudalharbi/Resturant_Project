@@ -6,12 +6,17 @@
 //
 
 import Foundation
+import UIKit
 struct Customer {
     
     var nameCustomer : String
 
     var emailCustomer : String
     
+    var comment : String
+    
+    
+    var profileImg : UIImage?
     
 //    ----------------------
     

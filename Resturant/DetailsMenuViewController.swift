@@ -52,6 +52,9 @@ class DetailsMenuViewController: UIViewController {
 //        counterLabel.text = String(price)
 
         // Do any additional setup after loading the view.
+        
+
+        
     }
     
 
@@ -88,7 +91,17 @@ class DetailsMenuViewController: UIViewController {
         
         print ("added to DB")
         let VC = self.storyboard?.instantiateViewController(withIdentifier: "menuID") as! MenuViewController
+
+
         self.navigationController?.popViewController(animated: true)
+
+        
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "cartID") as! cartsViewController
+        vc.orderImgss = deatialImg.image
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+
         
         
         
